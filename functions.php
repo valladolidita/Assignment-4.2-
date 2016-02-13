@@ -1,4 +1,4 @@
- <?php
+<?php
 /**
  * pressedsqueezed functions and definitions.
  *
