@@ -50,6 +50,13 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
 /*--------------------------------------------------------------
 # Normalize
 --------------------------------------------------------------*/
+
+* {
+	-webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+	-moz-box-sizing: border-box;    /* Firefox, other Gecko */
+	box-sizing: border-box; 
+}
+
 html {
 	font-family: sans-serif;
 	-webkit-text-size-adjust: 100%;
@@ -115,10 +122,11 @@ dfn {
 	font-style: italic;
 }
 
-h1 {
+/* h1 {
 	font-size: 2em;
 	margin: 0.67em 0;
 }
+*/
 
 mark {
 	background: #ff0;
@@ -278,7 +286,7 @@ textarea {
 	font-family: merriweather, serif;
 	font-weight: 400;
 	font-size: 100%;
-	font-size: 1.6rem;
+	/* font-size: 1.65rem; */
 	line-height: 1.5;
 }
 
@@ -362,6 +370,8 @@ html {
 
 body {
 	background: #fff; /* Fallback for when there is no custom background color defined. */
+	margin-left:auto;
+	margin-right:auto;
 }
 
 blockquote:before,
@@ -534,7 +544,7 @@ textarea {
 ## Links
 --------------------------------------------------------------*/
 a {
-	color: royalblue;
+	color: black;
 }
 
 a:visited {
@@ -565,6 +575,7 @@ a:active {
 	padding-bottom: 1em;
 	border-bottom: 1px solid #ccc;
 	margin-bottom: 2em;
+	/*font-size: .65em;*/
 }
 
 .menu-main-navigation-container ul {
@@ -734,8 +745,9 @@ a:active {
 .site-title {
 	font-family: josefin-slab, serif;
 	font-weight: 400;
-	font-size: 3em;
 	text-align: center;
+	margin: 1em 0 .50em 0;
+	font-size: 3em;
 }
 
 .site-title a {
@@ -750,11 +762,12 @@ a:active {
 /*--------------------------------------------------------------
 # Content
 --------------------------------------------------------------*/
-.entry-header h1 {
+.entry-content h1 {
 	font-family: josefin-slab, serif;
     font-weight: 400;
     font-size: 3em;
     text-align: center;
+    margin: .50em 0;
 }
 
 /*--------------------------------------------------------------
@@ -847,7 +860,7 @@ footer h1 {
 }
 
 footer p {
-	line-height: .5;
+	line-height: 0;
 }
 
 
