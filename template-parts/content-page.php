@@ -22,6 +22,9 @@
 			the_post_thumbnail();
 
 			the_title( '<h1 class="entry-title"><a href="' . esc_url( get_permalink() ) . '" rel="bookmark">', '</a></h1>' );
+			the_field( 'job_title' );
+
+			/*echo '<h2 class="job_title">' . get_field( 'job_title' ) . '</h2>'; */
 
 			the_content();
 
